@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Word Capture Extension",
+  "version": "1.0",
+  "description": "Capture selected word and store it in local storage",
+  "permissions": ["storage", "activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "capture_element": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+V",
+        "mac": "Command+Shift+V" 
+      },
+      "description": "Capture selected word"
+    }
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

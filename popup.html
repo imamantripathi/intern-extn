@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Captured Elements</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+  <div class="max-w-md mx-auto bg-white rounded shadow p-4">
+    <h1 class="text-2xl font-bold mb-4">Captured Elements</h1>
+    <div class="flex space-x-4 mb-4">
+      <button id="capture-button" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Capture Word</button>
+      <button id="clear-button" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Clear Storage</button>
+    </div>
+    <ul id="captured-list" class="space-y-4"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
